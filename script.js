@@ -107,7 +107,7 @@ function getPasswordOptions() {
   var Numbers = confirm('Press OK for Numeric case characters or cancel for none?');
   var SC = confirm('Press OK for Special characters or cancel for none?');
   // ! If all criterias are set to false run 2nd phase again
-  if ((!LC)&&(!UC)&&(!Numbers)&&(!SC)){
+  while ((!LC)&&(!UC)&&(!Numbers)&&(!SC)){
   LC = confirm('Unique criteria must be selected. Press OK for Lower case characters or cancel for none?');
   UC = confirm('Unique criteria must be selected. Press OK for Upper case characters or cancel for none?');
   Numbers = confirm('Unique criteria must be selected. Press OK for Numeric case characters or cancel for none?');
